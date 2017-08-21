@@ -1,0 +1,71 @@
+.contains {
+    width:80%;
+    margin:auto;
+    overflow: auto;
+}
+
+section {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.tagline {
+    background: #03899c;
+    color: #FFFFFF;
+}
+
+.tagline h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+#gall {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    width:100%;
+}
+
+#gall li {
+    display: block;
+    float: left;
+    width: 23%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 12px 7px 0;
+    position: relative;
+}
+
+#gall img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.overlay {
+    display: none;
+    background: #03899c url(../img/gallery/overlay.png) no-repeat top center;
+    color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 100;
+    width: 100%;
+    height:100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.overlay h3 {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 760px) {
+    #gall {
+        width: 48%;
+        margin-right: 8px;
+    }
+}
